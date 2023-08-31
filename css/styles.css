@@ -215,6 +215,7 @@ img {
 
 .container {
   max-width: 1440px;
+  padding: 0 45px;
 }
 
 /* header start  */
@@ -723,6 +724,157 @@ font-weight: 400;
 line-height: 160%; /* 28.8px */
 }
 
+.advantge_sec{padding: 5rem 0 3rem;}
+.advantge_sec .left_box{position: relative;}
+.advantge_sec .left_box .level_up{
+  /* border-radius: 16px; */
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+background: var(--Primary, #D27722);
+box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.05), 0px 2px 5px 0px rgba(0, 0, 0, 0.05), 0px 9px 9px 0px rgba(0, 0, 0, 0.04), 0px 20px 12px 0px rgba(0, 0, 0, 0.03), 0px 35px 14px 0px rgba(0, 0, 0, 0.01), 0px 55px 15px 0px rgba(0, 0, 0, 0.00);
+padding: 24px;
+position: absolute;
+    bottom: -30px;
+    max-width: 280px;
+    left: -48px;
+    /* right: -41px; */
+    width: 100%;
+    min-height: 180px;
+}
+.advantge_sec .left_box .level_up p{
+  color: #FFF;
+text-align: right;
+font-family: Outfit;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 22.4px */
+margin-top: 20px;
+}
+.advantge_sec .left_box .level_up h6{
+  color: #FFF;
+  text-align: right;
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.advantge_sec .right_box {}
+.advantge_sec .right_box h3{
+  color: var(--Text-Color, #252422);
+  font-family: Rubik;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.62px;
+  margin-bottom: 3rem;
+}
+.advantge_sec .right_box .frst_bx{
+  display: flex;
+  gap: 20px;
+  margin-top: 1rem;
+  border-radius: 16px;
+border: 1px solid var(--Primary-Lighten, #FFDBB8);
+background: var(--Background, #FFF);
+padding: 16px;
+
+}
+.advantge_sec .right_box .imf{}
+.advantge_sec .right_box .bx-imf img{width: 70px;}
+.advantge_sec .right_box .content{}
+.advantge_sec .right_box .content h4{
+  color: var(--Text-Color, #252422);
+font-family: Rubik;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -0.48px;
+}
+.advantge_sec .right_box .content p{
+  color: var(--Text-Color-Secondary, #403D39);
+font-family: Outfit;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 25.6px */
+margin-top: 10px;
+}
+
+
+
+
+
+.working_sec{padding-top: 3rem;}
+.working_sec .worksStart_section_pad{padding: 8rem 0;}
+.working_sec .worksStart_section_1 .row{align-items: center;}
+.working_sec .worksStart_section_1 .lefting_side{padding-left: 60px;}
+.working_sec .worksStart_section_1 .righting_side{    padding-right: 60px;
+  padding-left: 23px;}
+.working_sec .worksStart_section_1 img{}
+.working_sec .worksStart_section_1 h3{
+  color: var(--Text-Color, #252422);
+font-family: Rubik;
+font-size: 36px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.working_sec .worksStart_section_1 p{
+  color: var(--Text-Color-Secondary, #403D39);
+font-family: Outfit;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 28.8px */
+padding: 20px 0;
+}
+.working_sec .worksStart_section_1 a{
+  border-radius: 4px;
+background: var(--Primary, #D27722);
+padding: 8px 16px;
+border: 2px solid #D27722;
+color: #fff;
+}
+.working_sec .worksStart_section_1 a:hover{
+  border-radius: 4px;
+  border: 2px solid #D27722;
+background: transparent;
+padding: 8px 16px;
+color: #D27722;
+box-shadow: 8px 8px 20px #D27722;
+}
+
+
+
+
+.money_back{text-align: center;
+  width: 550px;
+  /* height: 298px; */
+  margin: 0 auto;
+  padding: 0 0 3rem;
+}
+
+.money_back h2{color: var(--Text-Color, #252422);
+  font-family: Rubik;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.64px;}
+  .money_back p{
+    color: var(--Text-Color-Secondary, #403D39);
+text-align: center;
+font-family: Outfit;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 160%; /* 28.8px */
+padding: 20px 0;
+  }
 
 
 
@@ -745,6 +897,23 @@ line-height: 160%; /* 28.8px */
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
 
 
@@ -770,10 +939,13 @@ line-height: 160%; /* 28.8px */
 @media only screen and (min-width: 1920px) {}
 
 @media only screen and (max-width: 1580px) {
-  .container {
+  /* .container {
     max-width: 1280px;
+  } */
+  .container {
+    max-width: 1440px;
+    padding: 0 45px;
   }
-
 }
 
 /* Ipad pro CSS */
