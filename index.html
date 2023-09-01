@@ -1,555 +1,893 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cook-web-app</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cook-web-app</title>
-  <link rel="stylesheet" href="./css/bootstrap.min.css" />
-  <link rel="stylesheet" href="./css/styles.css" />
-</head>
+  <body>
+    <!-- Header Start -->
 
-<body>
-  <!-- Header Start -->
-
-  <div id="mySidepanel" class="sidepanel">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="./images/icons/cross_mobile_menu.svg"
-        alt="" /></a>
-    <div class="mobile_menu">
-      <div class="first">
-        <ul>
-          <li>
-            <a href="">Cooking Classes</a>
-          </li>
-          <li>
-            <a href="">Become a Chef</a>
-          </li>
-          <li>
-            <a href="">Group Cooking</a>
-          </li>
-          <li>
-            <a href="">Support</a>
-          </li>
-          <li>
-            <a href="">English <img src="./images/icons/mobile_dropdown.svg" alt="" /></a>
-          </li>
-          <li>
-            <a href="">Currency <img src="./images/icons/mobile_dropdown.svg" alt="" /></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="header">
-    <div class="container">
-      <div class="hdr_main">
-        <img src="./images/icons/logo.svg" alt="" />
-        <img src="./images/icons/line.svg" class="mobile_hide" alt="" />
-        <div class="hdr-left">
+    <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        ><img src="./images/icons/cross_mobile_menu.svg" alt=""
+      /></a>
+      <div class="mobile_menu">
+        <div class="first">
           <ul>
             <li>
-              <a href=""><img src="./images/icons/cooking.svg" alt="" />Cooking
-                Classes</a>
+              <a href="">Cooking Classes</a>
             </li>
             <li>
-              <a href=""><img src="./images/icons/chef.svg" alt="" />Become a Chef</a>
+              <a href="">Become a Chef</a>
             </li>
             <li>
-              <a href=""><img src="./images/icons/grpcook.svg" alt="" />Group
-                Cooking</a>
+              <a href="">Group Cooking</a>
+            </li>
+            <li>
+              <a href="">Support</a>
+            </li>
+            <li>
+              <a href=""
+                >English <img src="./images/icons/mobile_dropdown.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href=""
+                >Currency <img src="./images/icons/mobile_dropdown.svg" alt=""
+              /></a>
             </li>
           </ul>
         </div>
+      </div>
+    </div>
+    <div class="header">
+      <div class="container">
+        <div class="hdr_main">
+          <img src="./images/icons/logo.svg" alt="" />
+          <img src="./images/icons/line.svg" class="mobile_hide" alt="" />
+          <div class="hdr-left">
+            <ul>
+              <li>
+                <a href=""
+                  ><img src="./images/icons/cooking.svg" alt="" />Cooking
+                  Classes</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><img src="./images/icons/chef.svg" alt="" />Become a Chef</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><img src="./images/icons/grpcook.svg" alt="" />Group
+                  Cooking</a
+                >
+              </li>
+            </ul>
+          </div>
 
-        <div class="auth_rea">
-          <ul>
-            <li>
-              <p>Eng <img src="./images/icons/dropdown.svg" alt="" /></p>
-            </li>
-            <li>
-              <p>USD <img src="./images/icons/dropdown.svg" alt="" /></p>
-            </li>
-            <li>
-              <span>
-                <img src="./images/icons/info.svg" alt="" srcset="" /></span>
-            </li>
-            <li>
-              <a href="">Log in
-                <span><img src="./images/icons/log-in.svg" alt="" /></span></a>
-            </li>
-          </ul>
-        </div>
+          <div class="auth_rea">
+            <ul>
+              <li>
+                <p>Eng <img src="./images/icons/dropdown.svg" alt="" /></p>
+              </li>
+              <li>
+                <p>USD <img src="./images/icons/dropdown.svg" alt="" /></p>
+              </li>
+              <li>
+                <span>
+                  <img src="./images/icons/info.svg" alt="" srcset=""
+                /></span>
+              </li>
+              <li>
+                <a href=""
+                  >Log in
+                  <span><img src="./images/icons/log-in.svg" alt="" /></span
+                ></a>
+              </li>
+            </ul>
+          </div>
 
-        <div class="mobile-menu" onclick="openNav()">
-          <img src="./images/icons/mobile-icon-humbergur.svg" alt="" />
+          <div class="mobile-menu" onclick="openNav()">
+            <img src="./images/icons/mobile-icon-humbergur.svg" alt="" />
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Header end -->
+    <!-- Header end -->
 
-  <!-- Hero section Start -->
+    <!-- Hero section Start -->
 
-  <section class="hero_sec">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-7">
-          <div class="left_sec">
-            <h1>
-              Master the Art of
-              <span class="D_BLOCK">Cooking with <s class="special_font">Experts</s></span>
-              Worldwide
-            </h1>
-            <p class="para_f">
-              Experience the joy of cooking in a whole new way with our
-              engaging online
-              <span>cooking classes. Learn from the chefs, share your unique
-                culinary</span>
-              knowledge, and join our growing foodie community. With COOK,
-              learning, <span>and teaching becomes a shared passion.</span>
-            </p>
-            <p class="para_sec">
-              <img src="./images/icons/play-circle.svg" alt="" srcset="" />Learn more in the COOK video
-            </p>
-            <div class="btn_hero_fst">
-              <a href="">Find Your Tutor</a>
-              <a href="">Join Our Chefs</a>
+    <section class="hero_sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-7">
+            <div class="left_sec">
+              <h1>
+                Master the Art of
+                <span class="D_BLOCK"
+                  >Cooking with <s class="special_font">Experts</s></span
+                >
+                Worldwide
+              </h1>
+              <p class="para_f">
+                Experience the joy of cooking in a whole new way with our
+                engaging online
+                <span
+                  >cooking classes. Learn from the chefs, share your unique
+                  culinary</span
+                >
+                knowledge, and join our growing foodie community. With COOK,
+                learning, <span>and teaching becomes a shared passion.</span>
+              </p>
+              <p class="para_sec">
+                <img
+                  src="./images/icons/play-circle.svg"
+                  alt=""
+                  srcset=""
+                />Learn more in the COOK video
+              </p>
+              <div class="btn_hero_fst">
+                <a href="">Find Your Tutor</a>
+                <a href="">Join Our Chefs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-5">
+            <div class="right_sec">
+              <img src="./images/Hero Img.jpg" alt="" />
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-5">
-          <div class="right_sec">
-            <img src="./images/Hero Img.jpg" alt="" />
-          </div>
-        </div>
       </div>
-    </div>
-  </section>
-  <!-- Hero section End -->
+    </section>
+    <!-- Hero section End -->
 
-  <!-- Counter section 2nd  starts -->
+    <!-- Counter section 2nd  starts -->
 
-  <section class="counter_wrp">
-    <img src="./images/icons/line-hr.svg" class="hr_line" alt="" />
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-3">
-          <div class="first_sec">
-            <h4>100+</h4>
-            <p>Talented Chefs</p>
-          </div>
-        </div>
-        <div class="col-12 col-md-3">
-          <div class="first_sec">
-            <h4>1000+</h4>
-            <p>Students</p>
-          </div>
-        </div>
-        <div class="col-12 col-md-3">
-          <div class="first_sec">
-            <h4>4.8 <img src="./images/icons/start.svg" alt="" /></h4>
-            <p>Talented Chefs</p>
-          </div>
-        </div>
-        <div class="col-12 col-md-3">
-          <div class="first_sec">
-            <h4>20+</h4>
-            <p>Cooking Categories</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Counter section 2nd  end -->
-
-  <!-- Erplore section 3rd  starts -->
-
-  <div class="explore_wrp">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <div class="learn_sec">
-            <div class="img_sec">
-              <img src="./images/icons/epl-lern.png" alt="" />
+    <section class="counter_wrp">
+      <img src="./images/icons/line-hr.svg" class="hr_line" alt="" />
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-3">
+            <div class="first_sec">
+              <h4>100+</h4>
+              <p>Talented Chefs</p>
             </div>
-            <div class="content_sec">
-              <h2>Explore & Learn</h2>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="first_sec">
+              <h4>1000+</h4>
+              <p>Students</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="first_sec">
+              <h4>4.8 <img src="./images/icons/start.svg" alt="" /></h4>
+              <p>Talented Chefs</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="first_sec">
+              <h4>20+</h4>
+              <p>Cooking Categories</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Counter section 2nd  end -->
+
+    <!-- Erplore section 3rd  starts -->
+
+    <section class="explore_wrp">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="learn_sec">
+              <div class="img_sec">
+                <img src="./images/icons/epl-lern.png" alt="" />
+              </div>
+              <div class="content_sec">
+                <h2>Explore & Learn</h2>
+                <p>
+                  Dive into a range of cooking styles and techniques tailored to
+                  your interests
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="left_sec">
+              <div class="search_sec">
+                <img src="./images/icons/search-icon.svg" alt="" />
+                <input type="search" placeholder="Search tutors by category " />
+              </div>
+            </div>
+          </div>
+
+          <div class="sub_cat">
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <div class="box1">
+                  <div class="baker">
+                    <div class="img_bkr">
+                      <img src="./images/bakerimg.jpg" alt="" />
+                    </div>
+                    <div class="cont_sec">
+                      <div class="heading">
+                        <h4>Bakery</h4>
+                        <img src="./images/icons/drop-img1.svg" alt="" />
+                      </div>
+                      <p>
+                        Master baking: from rustic bread to delicate pastries
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="box2">
+                  <div class="baker">
+                    <div class="img_bkr">
+                      <img src="./images/vegan.jpg" alt="" />
+                    </div>
+                    <div class="cont_sec">
+                      <div class="heading">
+                        <h4>Vegan Cooking</h4>
+                        <img src="./images/icons/arrow-up-right.svg" alt="" />
+                      </div>
+                      <p>
+                        Create delicious, nutritious meals with plant-based
+                        ingredients
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="box2">
+                  <div class="baker">
+                    <div class="img_bkr">
+                      <img src="./images/seafood.jpg" alt="" />
+                    </div>
+                    <div class="cont_sec">
+                      <div class="heading">
+                        <h4>Seafood Mastery</h4>
+                        <img src="./images/icons/arrow-up-right.svg" alt="" />
+                      </div>
+                      <p>
+                        Dive into seafood: from grilling fish to creating sushi
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="box2">
+                  <div class="baker">
+                    <div class="img_bkr">
+                      <img src="./images/bbq.jpg" alt="" />
+                    </div>
+                    <div class="cont_sec">
+                      <div class="heading">
+                        <h4>BBQ & Grilling</h4>
+                        <img src="./images/icons/arrow-up-right.svg" alt="" />
+                      </div>
+                      <p>Fire up your skills with mouth-watering BBQ dishes</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="box2">
+                  <div class="baker">
+                    <div class="img_bkr">
+                      <img src="./images/wine.jpg" alt="" />
+                    </div>
+                    <div class="cont_sec">
+                      <div class="heading">
+                        <h4>Wine Pairing</h4>
+                        <img src="./images/icons/arrow-up-right.svg" alt="" />
+                      </div>
+                      <p>
+                        Enhance culinary experiences by mastering wine pairing
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="box2">
+                  <div class="baker">
+                    <div class="img_bkr">
+                      <img src="./images/cake.jpg" alt="" />
+                    </div>
+                    <div class="cont_sec">
+                      <div class="heading">
+                        <h4>Cake Decorating</h4>
+                        <img src="./images/icons/arrow-up-right.svg" alt="" />
+                      </div>
+                      <p>Unleash creativity with cake decorating techniques</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="show_more">
               <p>
-                Dive into a range of cooking styles and techniques tailored to
-                your interests
+                Show more
+                <img src="./images/icons/arrow-down-circle.svg" alt="" />
               </p>
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6">
-          <div class="left_sec">
-            <div class="search_sec">
-              <img src="./images/icons/search-icon.svg" alt="" />
-              <input type="search" placeholder="Search tutors by category " />
-            </div>
-          </div>
-        </div>
-
-        <div class="sub_cat">
-          <div class="row">
-            <div class="col-12 col-md-4">
-              <div class="box1">
-                <div class="baker">
-                  <div class="img_bkr">
-                    <img src="./images/bakerimg.jpg" alt="" />
-                  </div>
-                  <div class="cont_sec">
-                    <div class="heading">
-                      <h4>Bakery</h4>
-                      <img src="./images/icons/drop-img1.svg" alt="" />
-                    </div>
-                    <p>
-                      Master baking: from rustic bread to delicate pastries
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-4">
-              <div class="box2">
-                <div class="baker">
-                  <div class="img_bkr">
-                    <img src="./images/vegan.jpg" alt="" />
-                  </div>
-                  <div class="cont_sec">
-                    <div class="heading">
-                      <h4>Vegan Cooking</h4>
-                      <img src="./images/icons/arrow-up-right.svg" alt="" />
-                    </div>
-                    <p>
-                      Create delicious, nutritious meals with plant-based
-                      ingredients
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-4">
-              <div class="box2">
-                <div class="baker">
-                  <div class="img_bkr">
-                    <img src="./images/seafood.jpg" alt="" />
-                  </div>
-                  <div class="cont_sec">
-                    <div class="heading">
-                      <h4>Seafood Mastery</h4>
-                      <img src="./images/icons/arrow-up-right.svg" alt="" />
-                    </div>
-                    <p>
-                      Dive into seafood: from grilling fish to creating sushi
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-4">
-              <div class="box2">
-                <div class="baker">
-                  <div class="img_bkr">
-                    <img src="./images/bbq.jpg" alt="" />
-                  </div>
-                  <div class="cont_sec">
-                    <div class="heading">
-                      <h4>BBQ & Grilling</h4>
-                      <img src="./images/icons/arrow-up-right.svg" alt="" />
-                    </div>
-                    <p>Fire up your skills with mouth-watering BBQ dishes</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-4">
-              <div class="box2">
-                <div class="baker">
-                  <div class="img_bkr">
-                    <img src="./images/wine.jpg" alt="" />
-                  </div>
-                  <div class="cont_sec">
-                    <div class="heading">
-                      <h4>Wine Pairing</h4>
-                      <img src="./images/icons/arrow-up-right.svg" alt="" />
-                    </div>
-                    <p>
-                      Enhance culinary experiences by mastering wine pairing
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-4">
-              <div class="box2">
-                <div class="baker">
-                  <div class="img_bkr">
-                    <img src="./images/cake.jpg" alt="" />
-                  </div>
-                  <div class="cont_sec">
-                    <div class="heading">
-                      <h4>Cake Decorating</h4>
-                      <img src="./images/icons/arrow-up-right.svg" alt="" />
-                    </div>
-                    <p>Unleash creativity with cake decorating techniques</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="show_more">
-            <p>
-              Show more
-              <img src="./images/icons/arrow-down-circle.svg" alt="" />
-            </p>
-          </div>
-        </div>
       </div>
-    </div>
-  </div>
+    </section>
 
-  <!-- Erplore section 3rd  End -->
+    <!-- Erplore section 3rd  End -->
 
-  <!-- Benefits section 4rd  starts -->
+    <!-- Benefits section 4rd  starts -->
 
-  <div class="benefits_wrp">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="head_sec">
-            <h2>
-              Our Unique Benefits
-              <sup><img src="./images/icons/benefitstik.svg" alt="" /></sup>
-            </h2>
-            <p>
-              Experience the perks of learning and teaching cooking on our
-              platform
-            </p>
-          </div>
-        </div>
-
-        <div class="benefits_sec_ser">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="benBox1">
-                <img src="./images/expertchef.png" alt="" />
-                <h3>Expert Chefs</h3>
-                <p>
-                  Learn from the best. Our platform features professional
-                  chefs from around the world who bring their unique
-                  experiences and culinary secrets to every class.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="benBox1">
-                <img src="./images/savetime.png" alt="" />
-                <h3>Save Time and Money</h3>
-                <p>
-                  Embrace the convenience of learning from home. Save time on
-                  travel, reduce dining-out expenses, and master your kitchen
-                  with our online cooking classes.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="benBox1">
-                <img src="./images/cooking.png" alt="" />
-                <h3>Accessible Cooking</h3>
-                <p>
-                  Start your culinary journey with ease. Our user-friendly
-                  platform makes navigation simple, letting you focus on
-                  learning and enjoying your online cooking classes.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Benefits section 4rd  starts -->
-
-  <!-- Avantage section 5th  starts -->
-
-  <div class="advantge_sec">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <div class="left_box">
-            <img src="./images/advantage-main.png" alt="" />
-
-            <div class="level_up">
-              <h6>
-                Level up
-                <img src="./images/icons/level-up-arrow.svg" alt="" />
-              </h6>
+    <section class="benefits_wrp">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="head_sec">
+              <h2>
+                Our Unique Benefits
+                <sup><img src="./images/icons/benefitstik.svg" alt="" /></sup>
+              </h2>
               <p>
-                Take your culinary skills to new heights. Our platform
-                provides you with the expert guidance you need to refine your
-                skills and cook like a pro
+                Experience the perks of learning and teaching cooking on our
+                platform
               </p>
             </div>
           </div>
-        </div>
-        <div class="col-12 col-md-6">
-          <div class="right_box">
-            <h3>Other Advantages</h3>
-            <div class="frst_bx">
-              <div class="bx-imf">
-                <img src="./images/icons/diverce-range.svg" alt="" />
+
+          <div class="benefits_sec_ser">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="benBox1">
+                  <img src="./images/expertchef.png" alt="" />
+                  <h3>Expert Chefs</h3>
+                  <p>
+                    Learn from the best. Our platform features professional
+                    chefs from around the world who bring their unique
+                    experiences and culinary secrets to every class.
+                  </p>
+                </div>
               </div>
-              <div class="content">
-                <h4>Diverse Range of Classes</h4>
-                <p>
-                  Explore the culinary world with our vast array of online
-                  cooking classes. Whether you're a beginner or a seasoned
-                  cook, we have a class that suits your skill level and
-                  interests.
-                </p>
+              <div class="col-md-4">
+                <div class="benBox1">
+                  <img src="./images/savetime.png" alt="" />
+                  <h3>Save Time and Money</h3>
+                  <p>
+                    Embrace the convenience of learning from home. Save time on
+                    travel, reduce dining-out expenses, and master your kitchen
+                    with our online cooking classes.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="frst_bx">
-              <div class="bx-imf">
-                <img src="./images/icons/chefcap.png" alt="" />
-              </div>
-              <div class="content">
-                <h4>Opportunity to Teach</h4>
-                <p>
-                  Share your culinary wisdom. If you're an experienced cook,
-                  our platform allows you to teach your classes, reach a
-                  global audience, and earn income.
-                </p>
-              </div>
-            </div>
-            <div class="frst_bx">
-              <div class="bx-imf">
-                <img src="./images/icons/interactles.svg" alt="" />
-              </div>
-              <div class="content">
-                <h4>Interactive Lessons</h4>
-                <p>
-                  Engage in real-time with expert chefs. Our interactive
-                  online cooking classes allow you to ask questions, receive
-                  instant feedback, and learn hands-on from the pros.
-                </p>
+              <div class="col-md-4">
+                <div class="benBox1">
+                  <img src="./images/cooking.png" alt="" />
+                  <h3>Accessible Cooking</h3>
+                  <p>
+                    Start your culinary journey with ease. Our user-friendly
+                    platform makes navigation simple, letting you focus on
+                    learning and enjoying your online cooking classes.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <!-- Avantage section 5th  End -->
+    </section>
+    <!-- Benefits section 4rd  starts -->
 
-  <!-- Working  section 6th  start -->
-  <div class="explore_wrp working_sec">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <div class="learn_sec">
-            <div class="img_sec">
-              <img src="./images/icons/working.svg" />
-            </div>
-            <div class="content_sec">
-              <h2>How It Works</h2>
-              <p>Getting Started with the COOK Platform</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6">
-          <div class="left_sec">
-            <div class="search_sec">
-              <img src="./images/icons/search-icon.svg" alt="" />
-              <input type="search" placeholder="Search tutors by category " />
-            </div>
-          </div>
-        </div>
+    <!-- Avantage section 5th  starts -->
 
-        <div class="worksStart_section_1 worksStart_section_pad">
-          <div class="row">
-            <div class="col-12 col-md-6">
-              <img src="./images/icons/workimg1.png" alt="" />
-            </div>
-            <div class="col-12 col-md-6 lefting_side">
-              <h3>Explore Our Culinary Experts</h3>
-              <p>Begin by browsing through our diverse selection of professional tutors and cooking groups. Each tutor
-                brings their unique culinary expertise and passion, ensuring you have a variety of cooking styles and
-                cuisines to choose from.</p>
-              <a href="#">Browse Tutors</a>
-            </div>
-          </div>
-        </div>
-        <div class="worksStart_section_1">
-          <div class="row">
-           
-            <div class="col-12 col-md-6 righting_side">
-              <h3>Select Your Perfect Match</h3>
-              <p>Once you've explored our range of tutors, choose the one that resonates most with you. Their profiles provide detailed information, such as their areas of expertise, availability, and reviews. Scheduling a lesson has never been easier.</p>
-            
-            </div>
-            <div class="col-12 col-md-6">
-              <img src="./images/workingimg2.png" alt="" />
+    <section class="advantge_sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="left_box">
+              <img src="./images/advantage-main.png" alt="" />
+
+              <div class="level_up">
+                <h6>
+                  Level up
+                  <img src="./images/icons/level-up-arrow.svg" alt="" />
+                </h6>
+                <p>
+                  Take your culinary skills to new heights. Our platform
+                  provides you with the expert guidance you need to refine your
+                  skills and cook like a pro
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="worksStart_section_1">
-          <div class="row">
-            <div class="col-12 col-md-6">
-              <img src="./images/workingimg3.png" alt="" />
-            </div>
-            <div class="col-12 col-md-6 lefting_side">
-              <h3>Enjoy Your Interactive Lesson</h3>
-              <p>Step into your online kitchen and start cooking! Our lessons are designed to be fun and interactive, enabling you to learn directly from the experts. After the class, you can review your experience and track your progress.</p>
-              <a href="#">Sign up for free</a>
+          <div class="col-12 col-md-6">
+            <div class="right_box">
+              <h3>Other Advantages</h3>
+              <div class="frst_bx">
+                <div class="bx-imf">
+                  <img src="./images/icons/diverce-range.svg" alt="" />
+                </div>
+                <div class="content">
+                  <h4>Diverse Range of Classes</h4>
+                  <p>
+                    Explore the culinary world with our vast array of online
+                    cooking classes. Whether you're a beginner or a seasoned
+                    cook, we have a class that suits your skill level and
+                    interests.
+                  </p>
+                </div>
+              </div>
+              <div class="frst_bx">
+                <div class="bx-imf">
+                  <img src="./images/icons/chefcap.png" alt="" />
+                </div>
+                <div class="content">
+                  <h4>Opportunity to Teach</h4>
+                  <p>
+                    Share your culinary wisdom. If you're an experienced cook,
+                    our platform allows you to teach your classes, reach a
+                    global audience, and earn income.
+                  </p>
+                </div>
+              </div>
+              <div class="frst_bx">
+                <div class="bx-imf">
+                  <img src="./images/icons/interactles.svg" alt="" />
+                </div>
+                <div class="content">
+                  <h4>Interactive Lessons</h4>
+                  <p>
+                    Engage in real-time with expert chefs. Our interactive
+                    online cooking classes allow you to ask questions, receive
+                    instant feedback, and learn hands-on from the pros.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <!-- Working  section 6th  End -->
+    </section>
+    <!-- Avantage section 5th  End -->
 
+    <!-- Working  section 6th  start -->
+    <section class="explore_wrp working_sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="learn_sec">
+              <div class="img_sec">
+                <img src="./images/icons/working.svg" />
+              </div>
+              <div class="content_sec">
+                <h2>How It Works</h2>
+                <p>Getting Started with the COOK Platform</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="left_sec">
+              <div class="search_sec">
+                <img src="./images/icons/search-icon.svg" alt="" />
+                <input type="search" placeholder="Search tutors by category " />
+              </div>
+            </div>
+          </div>
 
+          <div class="worksStart_section_1 worksStart_section_pad">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <img src="./images/icons/workimg1.png" alt="" />
+              </div>
+              <div class="col-12 col-md-6 lefting_side">
+                <h3>Explore Our Culinary Experts</h3>
+                <p>
+                  Begin by browsing through our diverse selection of
+                  professional tutors and cooking groups. Each tutor brings
+                  their unique culinary expertise and passion, ensuring you have
+                  a variety of cooking styles and cuisines to choose from.
+                </p>
+                <a href="#">Browse Tutors</a>
+              </div>
+            </div>
+          </div>
+          <div class="worksStart_section_1">
+            <div class="row">
+              <div class="col-12 col-md-6 righting_side">
+                <h3>Select Your Perfect Match</h3>
+                <p>
+                  Once you've explored our range of tutors, choose the one that
+                  resonates most with you. Their profiles provide detailed
+                  information, such as their areas of expertise, availability,
+                  and reviews. Scheduling a lesson has never been easier.
+                </p>
+              </div>
+              <div class="col-12 col-md-6">
+                <img src="./images/workingimg2.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="worksStart_section_1">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <img src="./images/workingimg3.png" alt="" />
+              </div>
+              <div class="col-12 col-md-6 lefting_side">
+                <h3>Enjoy Your Interactive Lesson</h3>
+                <p>
+                  Step into your online kitchen and start cooking! Our lessons
+                  are designed to be fun and interactive, enabling you to learn
+                  directly from the experts. After the class, you can review
+                  your experience and track your progress.
+                </p>
+                <a href="#">Sign up for free</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Working  section 6th  End -->
 
     <!-- Money back  section 6th  start-->
 
-    <div class="money_back">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-                <img src="./images/icons/moneyback.svg" alt="">
-                <h2>Money-back guarantee</h2>
-                <p>We believe you'll enjoy your first cooking lesson. However, we've got your back if anything goes differently than expected. Our money-back guarantee ensures you can take the first step with complete confidence.</p>
+    <section class="money_back">
+      <img src="./images/icons/line-hr.svg" alt="" class="hr_line">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+           <div class="sec_cen">
+            <div class="img_bnack">
+              <img src="./images/icons/moneyback.svg" alt="" />
+            </div>
+            <h2>Money-back guarantee</h2>
+            <p>
+              We believe you'll enjoy your first cooking lesson. However, we've
+              got your back if anything goes differently than expected. Our
+              money-back guarantee ensures you can take the first step with
+              complete confidence.
+            </p>
+           </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Money back  section 6th  end-->
+
+    <!-- Beccome a cook  section 6th  start-->
+
+    <section class="become_cook">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="right_sec">
+              <h3>Become A Chef</h3>
+              <p>
+                Share your culinary secrets, inspire cooking enthusiasts
+                worldwide, and grow your career like never before. Our platform
+                offers a unique way to connect, teach, and earn.
+              </p>
+            </div>
+            <div class="member_points">
+              <img src="./images/icons/check.svg" alt="" />
+              <div class="text">
+                <p>
+                  <b>Build Your Brand. </b>Showcase your culinary skills and
+                  build your brand within our community.
+                </p>
+              </div>
+            </div>
+            <div class="member_points">
+              <img src="./images/icons/check.svg" alt="" />
+              <div class="text">
+                <p>
+                  <b>Expand Your Reach. </b>Connect with cooking enthusiasts
+                  across the globe and expand your audience beyond geographical
+                  limits.
+                </p>
+              </div>
+            </div>
+            <div class="member_points">
+              <img src="./images/icons/check.svg" alt="" />
+              <div class="text">
+                <p>
+                  <b>Grow Your Business Faster.</b>Utilize our platform's
+                  features and resources to accelerate your growth and increase
+                  your income.
+                </p>
+              </div>
+            </div>
+            <div class="member_btn">
+              <a href="">Become a chef</a>
+
+              <p>
+                <img src="./images/icons/info.svg" alt="" /> Learn how our
+                platform works
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="left_sec">
+              <img src="./images/becomechef.png" alt="" />
             </div>
           </div>
         </div>
-
       </div>
-      <!-- Money back  section 6th  end-->
+    </section>
 
-      
+    <!-- Beccome a cook  section 6th  End-->
 
-              <!-- Beccome a cook  section 6th  start-->
-              
-              <!-- <div class="become_cook">
-                <div class="container">
-                  <div class="row">
-                      <div class="col-12 col-md-6">
-                          <div class="right_sec">
-                            <h3>Become A Chef</h3>
-                            <p>Share your culinary secrets, inspire cooking enthusiasts worldwide, and grow your career like never before. Our platform offers a unique way to connect, teach, and earn.</p>
-                          </div>
-                      </div>
+    <!-- Beccome a student  section 7th  start-->
+
+    <section class="become_student">
+      <div class="container">
+        <div class="bg_color">
+          <div class="row">
+            <div class="col-12 col-md-5">
+              <div class="rightImg">
+                <img src="./images/becomestudent.png" alt="" />
+              </div>
+            </div>
+            <div class="col-12 col-md-7">
+              <div class="left_content">
+                <h2>Become A Student</h2>
+                <p>
+                  Kick-start your culinary adventure with COOK. We provide a
+                  space for cooking enthusiasts of all levels to learn, explore,
+                  and master culinary arts from professional chefs worldwide. So
+                  dive in and transform your kitchen into a playground of
+                  flavors.
+                </p>
+                <div class="left_points">
+                  <div class="points">
+                    <img src="./images/icons/check1.svg" alt="" />
+                    <p>
+                      <b>Diverse Classes:</b> Access a wide variety of classes
+                      catering to all skill levels and culinary interests.
+                    </p>
+                  </div>
+                  <div class="points">
+                    <img src="./images/icons/check1.svg" alt="" />
+                    <p>
+                      <b>World-Class Chefs:</b> Learn directly from professional
+                      chefs sharing their unique culinary secrets.
+                    </p>
+                  </div>
+                  <div class="points">
+                    <img src="./images/icons/check1.svg" alt="" />
+                    <p>
+                      <b>Interactive Learning:</b> Ask questions and receive
+                      real-time feedback in our interactive classes.
+                    </p>
                   </div>
                 </div>
-              </div> -->
-  <script src="./js/bootstrap.min.js"></script>
-  <script src="./js/main.js"></script>
-</body>
 
+                <div class="btn_s">
+                  <a href="">Sign up</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beccome a student  section 7th  End-->
+
+    <!-- Popular courses section 8th  Start-->
+
+    <section class="online_course">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="online_classes">
+              <img src="./images/icons/epl-lern.png" alt="" srcset="" />
+              <div class="find_category">
+                <h2>Popular online classes</h2>
+                <h3>Find a tutor by category</h3>
+                <div class="category">
+                  <p>Bakery</p>
+                  <p>Japanese Sushi Making</p>
+                  <p>Thai</p>
+                </div>
+                <div class="category">
+                  <p>Seafood</p>
+                  <p>Italian Cuisine</p>
+                  <p>Vegan</p>
+                </div>
+                <div class="category">
+                  <p>BBQ & Grilling</p>
+                </div>
+                <div class="category_contry">
+                  <h3>Find a tutor by country</h3>
+                  <p>USA</p>
+                  <p>Spain</p>
+                  <p>France</p>
+                  <div class="sub_contry">
+                    <p>Mexico</p>
+                    <p>Germany</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="cook_blog">
+              <div class="row">
+                <div class="col-12">
+                  <div class="head_sec">
+                    <img src="./images/icons/epl-lern.png" alt="" srcset="" />
+                    <h2>COOK Blog</h2>
+                  </div>
+                  <div class="cook_card">
+                    <div class="card_blog">
+                      <img src="./images/blogimg.jpg" alt="" />
+                      <div class="card_ftr">
+                        <div class="timeing">
+                          <img src="./images/icons/calendar.svg" alt="" />
+                          <span>24 Apr, 2023</span>
+                        </div>
+                        <h2>Mastering the Art of Homemade Pizza</h2>
+                      </div>
+                    </div>
+                    <div class="card_blog">
+                      <img src="./images/blogimg2.png" alt="" />
+                      <div class="card_ftr">
+                        <div class="timeing">
+                          <img src="./images/icons/calendar.svg" alt="" />
+                          <span>24 Apr, 2023</span>
+                        </div>
+                        <h2>Delectable Homemade Ice Cream</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cook_card">
+                    <div class="card_blog">
+                      <img src="./images/blogimg3.jpg" alt="" />
+                      <div class="card_ftr">
+                        <div class="timeing">
+                          <img src="./images/icons/calendar.svg" alt="" />
+                          <span>24 Apr, 2023</span>
+                        </div>
+                        <h2>How to Prepare Authentic Mexican Tacos</h2>
+                      </div>
+                    </div>
+                    <div class="card_blog">
+                      <img src="./images/blogimg4.jpg" alt="" />
+                      <div class="card_ftr">
+                        <div class="timeing">
+                          <img src="./images/icons/calendar.svg" alt="" />
+                          <span>24 Apr, 2023</span>
+                        </div>
+                        <h2>
+                          Tips and Techniques for a Restaurant-Quality Steak
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     <!-- Popular courses section 8th  Start-->
+
+
+
+      <!-- Footer section 9th  Start-->
+  
+      <footer class="footer">
+        <div class="container">
+          <div class="BG_clr_ftr">
+            
+          
+          <div class="row">
+            <div class="col-12 col-md-3 ">
+              <div class="ftr_logo">
+                <img src="./images/footer-logo.png" alt="">
+              </div>
+            </div>
+            <div class="col-12 col-md-2">
+              <h4>About US</h4>
+                <ul>
+                  <li><a href="">Who we are</a></li>
+                  <li><a href="">How it works</a></li>
+                  <li><a href="">COOK reviews</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-2">
+              <h4>For Students</h4>
+                <ul>
+                  <li><a href="">COOK blog</a></li>
+                  <li><a href="">Find a tutor</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-2">
+              <h4>For Tutors</h4>
+                <ul>
+                  <li><a href="">Become an online chef</a></li>
+                  <li><a href="">Teach cooking online</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-2">
+              <h4>Supports</h4>
+                <ul>
+                  <li><a href="">Need a help?</a></li>
+                </ul>
+            </div>
+          </div>
+          <div>
+            <img src="./images/line.png" alt="">
+          </div>
+         <div class="sub_ftr">
+          <div class="row">
+            <div class="col-12 col-md-3">
+              <address>
+                <h3>USA <span>Your address goes there</span></h3>
+                <p>+91-9818399274</p>
+              </address>
+            </div> 
+            <div class="col-12 col-md-2">
+             <div class="social_link">
+              <h4>COOK’s Socials</h4>
+              <ul>
+                <li><a href=""><img src="./images/icons/instagram.svg" alt=""></a></li>
+                <li><a href=""><img src="./images/icons/twitter.svg" alt=""></a></li>
+                <li><a href=""><img src="./images/icons/facebook.svg" alt=""></a></li>
+                <li><a href=""><img src="./images/icons/linkedin.svg" alt=""></a></li>
+              </ul>
+             </div>
+            </div> 
+            <div class="col-12 col-md-2">
+             <div class="Terms_cons">
+              <h4>Legal</h4>
+              <ul>
+                <li><a href=""><a href="">Terms Of Serivce</a></li>
+                <li><a href="">Privacy Policy</a></li>
+              </ul>
+             </div>
+            </div> 
+
+            <div class="col-12 col-md-5">
+              <div class="copyRight">
+                  <p ><span id="year"></span> Copyright</p>
+              </div>
+            </div>
+          </div>
+         </div>
+
+         <div class="developer">
+            <div class="row">
+              <div class="col-12">
+                <p>Developed By: <a href="https://www.linkedin.com/in/devarshadkhan" target="_blank">CodeWithArsh</a></p>
+              </div>
+            </div>
+         </div>
+        </div>
+        </div>
+      </footer>
+
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
