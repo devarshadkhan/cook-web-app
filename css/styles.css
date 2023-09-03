@@ -2057,7 +2057,7 @@ img {
   }
 
   .slider_wrp {
-    left: 0;
+    left: 28px;
     bottom: -96px;
   }
 
@@ -2184,11 +2184,12 @@ img {
   }
 
   .advantge_sec .left_box .level_up {
-    left: 0;
+    left: 28px;
     border-radius: 16px;
     bottom: -89px;
   }
-
+  .footer .sub_ftr .social_link ul{justify-content: center;}
+  .footer .sub_ftr .copyRight{justify-content: center;}
   .advantge_sec .right_box {
     padding: 11rem 0 0;
   }
@@ -2431,12 +2432,12 @@ img {
 
   .hero_sec{padding: 0;}
   /* .hero_sec .container{padding: 0;} */
-  .videoImgmob{display: block;}
+  .videoImgmob{display: block;width: 100%;}
   .videoImg{display: none;}
   .benefits_wrp .benefits_sec_ser .benBox1 h3 {
     font-size: 28px;
 }
-.advantage_mob{display: block;}
+.advantage_mob{display: block;width: 100%;}
 .tab_a_none{display: none;}
 .advantge_sec .right_box .frst_bx{flex-direction:  column;gap: 10px;}
 .advantge_sec .right_box .content h4 {font-size: 21px;}
